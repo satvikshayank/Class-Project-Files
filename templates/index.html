@@ -1,0 +1,477 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>Smart Shopping</title>
+
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+	<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+<body>
+
+<!--------------------header section-------------------------------------------------------------->
+	<header>
+
+		<div id="menu-bar" class="fas fa-bars"></div>
+
+		<a href="#" class="logo"><span>Smart</span> shopping</a>
+
+		<nav class="navbar">
+			<a href="{{ url_for('index') }}">Home</a>
+			<a href="{{ url_for('.index',_anchor='popular') }}">Popular</a>
+			<a href="{{ url_for('.index',_anchor='categories') }}">Categories</a>
+			<a href="{{ url_for('.index',_anchor='services') }}">Services</a>
+			<a href="{{ url_for('.index',_anchor='contact') }}">Contact</a>
+		</nav>
+
+		<form class="icons" action="/logout">
+			<i class="fas fa-search" id="search-btn"></i>
+			<i class="fas fa-user" id="use"></i>
+			<input type="submit" name="" value="logout" class="btn" id="logout">
+		</form>
+
+
+		<div class="userr">
+			<div class="ico">
+				<div class="icon">
+					<i class="fas fa-user" id="login-btn"></i>
+					<div class="info">
+					<p>{{ session.name }}</p>
+				</div>
+				</div>
+			</div>
+			<div class="cont">
+				<a href="index.html #contact">Contact</a> 				
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+		<form action="/results" class="search-bar-container" method="get">
+			<input type="search" id="search-bar" placeholder="search here......" name="product_name">
+		</form>
+
+	</header>
+
+<!-------------------------login form --------------------------------------------------------------->
+
+
+<!------------------------------home section------------------------------------------>
+
+
+	<section class="home" id="home">
+		
+		<div class="content">
+			<h3> at the best possible prices</h3>
+			<p>we give you easy access to the best deals that can help you save more money while shopping</p>
+			<a href="#" class="btn">Shop Now</a>
+		</div>
+
+		<div class="controls">
+			<span class="vid-btn active" data-src="{{ url_for('static',filename='redmi.mp4') }}"></span>
+			<span class="vid-btn" data-src="{{ url_for('static',filename='iphone.mp4') }}"></span>
+			<span class="vid-btn" data-src="{{ url_for('static',filename='redmi1.mp4') }}"></span>
+			<span class="vid-btn" data-src="{{ url_for('static',filename='redmi2.mp4') }}"></span>
+		</div>
+
+		<div class="video-container">
+			<video src="{{ url_for('static',filename='iphone.mp4') }}" id="video-slider" loop autoplay muted></video>
+		</div>
+
+
+	</section>
+
+<!----------------------------popular------------------->
+
+	<section class="popular" id="popular">
+		
+
+		<h1 class="heading">
+			<span>p</span>
+			<span>o</span>
+			<span>p</span>
+			<span>u</span>
+			<span>l</span>
+			<span>a</span>
+			<span>r</span>
+			<span class="space"></span>
+			<span>m</span>
+			<span>o</span>
+			<span>b</span>
+			<span>i</span>
+			<span>l</span>
+			<span>e</span>
+		</h1>
+
+		<div class="box-container">
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61eDXs9QFNL._SL1500_.jpg">
+			<div class="content">
+				<h3>Apple</h3>
+				<p><p>Apple iPhone 13 Pro Max (128GB) - Sierra Blue</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹1,29,900.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/dp/B09G9H3RZH" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/71gm8v4uPBL._SL1500_.jpg">
+			<div class="content">
+				<h3>Apple</h3>
+				<p>Apple iPhone 13 Pro (128GB) - Graphite</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹1,19,900.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/dp/B09G99YPQM" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61F7Xcyux0L._SL1500_.jpg">
+			<div class="content">
+				<h3>Apple</h3>
+				<p>Apple iPhone 13 (256GB) - (Product) RED</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹89,900.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/dp/B09G9FPGTN" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61F7Xcyux0L._SL1500_.jpg">
+			<div class="content">
+				<h3>Apple</h3>
+				<p>Apple iPhone 13 Mini (256GB) - (Product) RED</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹79,900.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/Apple-iPhone-13-Mini-128GB/dp/B09G99NBNQ?ref_=ast_sto_dp&th=1&psc=1" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/71YlH-4MUQL._SL1500_.jpg">
+			<div class="content">
+				<h3>Apple</h3>
+				<p>New Apple iPhone 12 Pro (128GB) - Graphite</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹1,04,405.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/New-Apple-iPhone-Pro-128GB/dp/B08L5V1SBB/ref=sr_1_1?dchild=1&keywords=12+pro&qid=1632406013&qsid=260-4949168-2507215&sr=8-1&sres=B08L5V1SBB%2CB08L5V9T31%2CB08L5T365Z%2CB08L5T44CQ%2CB08L5VPTDK%2CB08L5VZKWT%2CB08L5T2XSF%2CB08L5S9TL1%2CB08L5T31M6%2CB08L5VF4J4%2CB08L5WFNP3%2CB08L5V825S%2CB08L5TQBBJ%2CB08L5WS5JB%2CB08Z6MW312%2CB08L5WVZJ7&srpt=CELLULAR_PHONE" class="btn">book now</a>
+			</div>
+		</div>
+		
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/71MHTD3uL4L._SL1500_.jpg">
+			<div class="content">
+				<h3>Apple</h3>
+				<p>New Apple iPhone 12 Pro Max (256GB) - Pacific Blue</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹1,23,405.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/New-Apple-iPhone-Pro-256GB/dp/B08L5T31M6/ref=sr_1_1?crid=1SQ0ZP467N98J&dchild=1&keywords=12+pro+max&qid=1632405887&qsid=260-4949168-2507215&sprefix=12+pro%2Caps%2C365&sr=8-1&sres=B08L5T31M6%2CB08L5VZKWT%2CB08L5W2S3Q%2CB08L5WVZJ7%2CB08L5H1B5P%2CB08L5VZ6SL%2CB08L5WFZCP%2CB08L5TQBBJ%2CB08L5V6N2K%2CB08L5V825S%2CB08Z6MW312%2CB08Z6T5892%2CB08Z721V2G%2CB08Z6Y2RY4%2CB08L5WS5JB%2CB08L5VT1DG&srpt=CELLULAR_PHONE" class="btn">book now</a>
+			</div>
+		</div>
+	</div>
+
+	</section>
+
+<!--------------------categories section-------------------------------------------------------------->
+
+	<section class="categories" id="categories">
+
+		<h1 class="heading">
+			<span>c</span>
+			<span>a</span>
+			<span>t</span>
+			<span>e</span>
+			<span>g</span>
+			<span>o</span>
+			<span>r</span>
+			<span>i</span>
+			<span>e</span>
+			<span>s</span>
+		</h1>
+
+	<div class="sub">
+				<div class="catg-container">
+			<div class="card">
+				<div class="imgBx">
+					<img src="{{ url_for('static',filename='c1.png') }}">
+				</div>
+				<div class="content1">
+					<h2>Communication device</h2>
+					<p> Mobile, Landline Phones, Wifi, Pc Etc</p>
+					<a href="{{ url_for('cat_m') }}" class="btn">open</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="imgBx">
+					<img src="{{ url_for('static',filename='C4.png') }}">
+				</div>
+				<div class="content1">
+					<h2>Home Appliances</h2>
+					<p>Oven, Microwave, Dishwasher, TV Etc</p>
+					<a href="{{ url_for('cat_h')}}" class="btn">open</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="imgBx">
+					<img src="{{ url_for('static',filename='c3.png') }}">
+				</div>
+				<div class="content1">
+					<h2>Skin care products</h2>
+					<p>Face washes, Creams & moisturizers, Body lotions Etc</p>
+					<a href="{{ url_for('cat_sk') }}" class="btn">open</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="imgBx">
+					<img src="{{ url_for('static',filename='c2.png') }}">
+				</div>
+				<div class="content1">
+					<h2>Security products</h2>
+					<p>Surveillance Cameras, Spy Pen , Electronic Cabinet Lock Etc</p>
+					<a href="{{ url_for('cat_sc')}}" class="btn">open</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</section>
+
+
+<!--------------------services section-------------------------------------------------------------->
+
+	<section class="services" id="services">
+		
+		<h1 class="heading">
+			<span>s</span>
+			<span>e</span>
+			<span>r</span>
+			<span>v</span>
+			<span>i</span>
+			<span>c</span>
+			<span>e</span>
+			<span>s</span>
+		</h1>
+
+		<div class="box-container">
+			
+			<div class="box">
+				<i class="fas fa-search"></i>
+				<h3>Multiple website</h3>
+				<p>You can search multiple website at a single click</p>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-clock"></i>
+				<h3>Time</h3>
+				<p>Convenient and time-efficient. ...</p>
+			</div>
+
+			<div class="box">
+				<i class="far fa-money-bill-alt"></i>
+				<h3>save money</h3>
+				<p>You can save money</p>
+			</div>
+
+		</div>
+
+
+	</section>
+
+<!--------------------contact section-------------------------------------------------------------->
+
+
+	<section class="contact" id="contact">
+		
+		<h1 class="heading">
+			<span>c</span>
+			<span>o</span>
+			<span>n</span>
+			<span>t</span>
+			<span>a</span>
+			<span>c</span>
+			<span>t</span>
+		</h1>
+
+		<div class="row">
+			
+			<div class="image">
+				<img src="https://www.pinclipart.com/picdir/big/337-3379122_technical-support-and-website-maintenance-contact-us-vector.png">
+			</div>
+
+			<form action="contact" method="post">
+				<div class="inputBox">
+					<input type="text" placeholder="Enter your Name" name="conname">
+					{% if session.name %}
+					<p>{{session.name}}</p>
+					{% else %}
+					<input type="text" placeholder="Enter your Email" name="conemail">
+					{% endif %}
+				</div>
+				<div class="inputBox">
+					<input type="text" placeholder="subject" name="consubject">
+				</div>
+				<textarea placeholder="message" name="conmsg" id="" cols="30" rows="10"></textarea>
+				<input type="submit" class="btn" value="send message">
+			</form>
+
+		</div>
+
+
+
+	</section>
+
+<!--------------------contact section-------------------------------------------------------------->
+
+
+	<section class="brand-container">
+		
+		<div class="swiper-container brand-slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="{{ url_for('static',filename='1.png') }}"></div>
+				<div class="swiper-slide"><img src="{{ url_for('static',filename='2.png') }}"></div>
+				<div class="swiper-slide"><img src="{{ url_for('static',filename='3.png') }}"></div>
+				<div class="swiper-slide"><img src="{{ url_for('static',filename='4.png') }}"></div>
+				<div class="swiper-slide"><img src="{{ url_for('static',filename='5.png') }}"></div>
+			</div>
+
+	</section>
+
+
+<!--------------------footer section-------------------------------------------------------------->
+
+	<section class="footer">
+
+		<div class="box-container">
+
+			<div class="box">
+				<h3>about us</h3>
+				<p>Searching for your favourite products at the best possible prices? At smart shopping we give you easy access to the best deals that can help you save more money while shopping.
+				Shortlisting, filtering, and researching takes away a lot of time, and when you have finally decided on what you want to buy, it can get cumbersome to find the best deals on that particular product. With Amazon, Flipkart, Myntra, Paytm and other similar platforms offering varied discounts, it can also get tough to fish out the best offers. That’s when you are going to need a platform like pricee.com – a one stop solution for online price comparisons across multiple product categories.</p>
+			</div>
+
+			<div class="box">
+				<h3>website</h3>
+				<a href="https://amazon.in">Amazon</a>
+				<a href="https://www.flipkart.com">Flipkart</a>
+				<a href="https://www.olx.in">olx</a>
+				<a href="https://www.shopping.google.com">Google</a>
+			</div>
+
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="#home">Home</a>
+				<a href="{{ url_for('.index',_anchor='popular') }}">Popular</a>
+				<a href="{{ url_for('.index',_anchor='categories') }}">Categories</a>
+				<a href="{{ url_for('.index',_anchor='services') }}">Services</a>
+				<a href="{{ url_for('.index',_anchor='contact') }}">Contact</a>
+			</div>
+
+			<div class="box">
+				<h3>follow us</h3>
+				<a href="#">facebook</a>
+				<a href="#">instagram</a>
+				<a href="#">twitter</a>
+				<a href="#">linkedin</a>
+				<a href="#">github</a>
+			</div>
+
+		</div>
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	let usr = document.querySelector('#use');
+	let detail = document.querySelector('.userr');
+
+
+	usr.addEventListener('click', () => {
+		detail.classList.toggle('active');
+	})
+
+</script>
+
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script src="{{ url_for('static',filename='script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>Smart Shopping</title>
+
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+<body>
+
+<!--------------------header section-------------------------------------------------------------->
+	<header>
+
+		<div id="menubarr" class="fas fa-bars"></div>
+
+
+
+		<nav class="navbarr">
+			<a href="{{ url_for('index') }}">Home</a>
+			<a href="{{ url_for('.index',_anchor='categories') }}">Categories</a>
+		</nav>
+
+
+
+		<a href="#" class="logo"><span>Smart</span> shopping</a>
+
+		
+
+		<div class="icons">
+			<i class="fas fa-search" id="search-btn"></i>
+			<i class="fas fa-user" id="use"></i>
+			<input type="submit" name="" value="Website" class="btnn" id="website">
+		</div>
+
+		<div class="userr">
+			<div class="ico">
+				<div class="icon">
+					<i class="fas fa-user" id="login-btn"></i>
+				</div>
+				<div class="info">
+					<p>{{ session.name }}</p>
+				</div>
+			</div>
+			<div class="cont">
+				<a href="index.html #contact">Contact</a> 				
+			</div>
+		</div>
+
+		<form action="/results" class="search-bar-container" method="get">
+			<input type="search" id="search-bar" placeholder="search here......" name="product_name">
+			<a href="search.html"><i for="search-bar" class="fas fa-search"></i></a>
+		</form>
+
+
+		<div class="web-box">
+				<a href="#amazon">Amazon</a>
+				<a href="#flipkart">Flipkart</a>
+				<a href="#google">Google</a>
+				<a href="#olx">Olx</a>
+		</div>
+
+	</header>
+
+
+
+
+	<section class="mobile" id="amazon">
+		
+
+		<h1 class="cate">
+			<span>A</span>
+			<span>M</span>
+			<span>A</span>
+			<span>Z</span>
+			<span>O</span>
+			<span>N</span>
+		</h1>
+
+		<div class="box-container">
+		{% for i in product_name_ama %}
+		<div class="box">
+			<img src="{{product_img_ama[loop.index]}}">
+			<div class="content">
+				<h3>{{product_name_ama[loop.index]}}</h3>
+				<p></p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">{{product_price_ama[loop.index]}}</div>
+				<p>Amazon.in</p>
+				<a href="{{product_link_ama[loop.index]}}" class="btn">book now</a>
+			</div>
+		</div>
+		{% endfor %}
+		</div>
+
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="mobile" id="flipkart">
+		
+
+		<h1 class="cate">
+			<span>F</span>
+			<span>L</span>
+			<span>I</span>
+			<span>P</span>
+			<span>K</span>
+			<span>A</span>
+			<span>R</span>
+			<span>T</span>
+		</h1>
+
+		<div class="box-container">
+		{% for i in product_name_flip %}
+		<div class="box">
+			<img src="{{ product_img_flip[loop.index] }}">
+			<div class="content">
+				<h3>{{ product_name_flip[loop.index] }}</h3>
+				<h2>{{ product_specs_flip[loop.index] }}</h2>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">{{ product_price_flip[loop.index] }}</div>
+				<p>Flipkart</p>
+				<a href="{{ product_link_flip[loop.index]}}" class="btn">book now</a>
+			</div>
+		</div>
+		{% endfor %}
+		</div>
+
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<section class="mobile" id="google">
+		
+
+		<h1 class="cate">
+			<span>G</span>
+			<span>O</span>
+			<span>O</span>
+			<span>G</span>
+			<span>L</span>
+			<span>E</span>
+		</h1>
+
+		<div class="box-container">
+		{% for i in product_name_gog %}
+		<div class="box">
+			<img src="{{ product_img_gog[loop.index] }}">
+			<div class="content">
+				<h3>{{ product_name_gog[loop.index] }}</h3>
+				<p></p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">{{ product_price_gog[loop.index] }}</div>
+				<p>Google Store</p>
+				<a href="{{ product_link_gog[loop.index]}}" class="btn">book now</a>
+			</div>
+		</div>
+		{% endfor %}
+		</div>
+
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<section class="mobile" id="olx">
+		
+
+		<h1 class="cate">
+			<span>O</span>
+			<span>L</span>
+			<span>X</span>
+		</h1>
+
+		<div class="box-container">
+		{% for i in product_name_olx %}
+		<div class="box">
+			<img src="{{ product_img_olx[loop.index] }}">
+			<div class="content">
+				<h3>{{ product_name_olx[loop.index] }}</h3>
+				<div class="price">{{ product_price_olx[loop.index] }}</div>
+				<p>OLX</p>
+				<a href="{{ product_link_olx[loop.index]}}" class="btn">book now</a>
+			</div>
+		</div>
+		{% endfor %}
+		</div>
+
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+<!--------------------footer section-------------------------------------------------------------->
+
+	<section class="footer">
+
+		<div class="box-container">
+
+			<div class="box">
+				<h3>about us</h3>
+				<p>Searching for your favourite products at the best possible prices? At smart shopping we give you easy access to the best deals that can help you save more money while shopping.
+				Shortlisting, filtering, and researching takes away a lot of time, and when you have finally decided on what you want to buy, it can get cumbersome to find the best deals on that particular product. With Amazon, Flipkart, Myntra, Paytm and other similar platforms offering varied discounts, it can also get tough to fish out the best offers. That’s when you are going to need a platform like pricee.com – a one stop solution for online price comparisons across multiple product categories.</p>
+			</div>
+
+			<div class="box">
+				<h3>website</h3>
+				<a href="https://amazon.in">Amazon</a>
+				<a href="https://www.flipkart.com">Flipkart</a>
+				<a href="https://www.olx.in">olx</a>
+				<a href="https://www.shopping.google.com">Google</a>
+			</div>
+
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="#home">Home</a>
+				<a href="{{ url_for('.index',_anchor='popular') }}">Popular</a>
+				<a href="{{ url_for('.index',_anchor='categories') }}">Categories</a>
+				<a href="{{ url_for('.index',_anchor='services') }}">Services</a>
+				<a href="{{ url_for('.index',_anchor='contact') }}">Contact</a>
+			</div>
+
+			<div class="box">
+				<h3>follow us</h3>
+				<a href="#">facebook</a>
+				<a href="#">instagram</a>
+				<a href="#">twitter</a>
+				<a href="#">linkedin</a>
+				<a href="#">github</a>
+			</div>
+
+		</div>
+
+
+		
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+ 	let menurr = document.querySelector('#menubarr');
+	let navbarr = document.querySelector('.navbarr');
+	let searchBtn = document.querySelector('#search-btn');
+	let searchBar = document.querySelector('.search-bar-container');
+	let usr = document.querySelector('#use');
+	let detail = document.querySelector('.userr');
+	let website = document.querySelector('#website');
+	let webbox = document.querySelector('.web-box');
+
+	window.onscroll = () =>{
+		searchBtn.classList.remove('fa-times');
+		searchBar.classList.remove('active');
+		menurr.classList.remove('fa-times');
+		navbarr.classList.remove('active');
+		detail.classList.remove('active');
+		webbox.classList.remove('active');
+	}
+
+	menurr.addEventListener('click', () => {
+		menurr.classList.toggle('fa-times');
+		navbarr.classList.toggle('active');
+	})
+
+	searchBtn.addEventListener('click', () => {
+	searchBtn.classList.toggle('fa-times');
+	searchBar.classList.toggle('active');
+	})
+
+	usr.addEventListener('click', () => {
+		detail.classList.toggle('active');
+	})
+
+
+	website.addEventListener('click', () => {
+		website.classList.toggle('fa-times');
+		webbox.classList.toggle('active');
+	})
+
+ </script>
+
+
+<script src="{{ url_for('static',filename='script.js') }}">
+		
+</script>
+
+</body>
+</html>

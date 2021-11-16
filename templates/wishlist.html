@@ -1,0 +1,308 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>Smart Shopping</title>
+
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+<body>
+
+<!--------------------header section-------------------------------------------------------------->
+	<header>
+
+		<div id="menubarr" class="fas fa-bars"></div>
+
+
+
+		<nav class="navbarr">
+			<a href="{{ url_for('index') }}">Home</a>
+			<a href="{{ url_for('.index',_anchor='categories') }}">Categories</a>
+			<a href="{{ url_for('wishlist') }}">Wishlist</a>
+		</nav>
+
+
+
+		<a href="#" class="logo"><span>Smart</span> shopping</a>
+
+		
+
+		<div class="icons">
+			<i class="fas fa-search" id="search-btn"></i>
+			<i class="fas fa-user" id="use"></i>
+			<input type="submit" name="" value="logout" class="btn" id="logout">
+		</div>
+
+		<div class="userr">
+			<div class="ico">
+				<div class="icon">
+					<i class="fas fa-user" id="login-btn"></i>
+				</div>
+				<div class="info">
+					<p>Username</p>
+					<p>abc@gmai.com</p>
+				</div>
+			</div>
+			<div class="cont">
+				<a href="index.html #contact">Contact</a> 				
+			</div>
+			<div class="exit">
+				<input type="submit" name="" value="logout" class="butt" >
+			</div>
+		</div>
+
+		<form action="/results" class="search-bar-container" method="get">
+			<input type="search" id="search-bar" placeholder="search here......" name="product_name">
+			<a href="search.html"><i for="search-bar" class="fas fa-search"></i></a>
+		</form>
+
+	</header>
+
+
+
+
+	<section class="mobile" id="mobile">
+		
+
+		<h1 class="cate">
+			<span>w</span>
+			<span>i</span>
+			<span>s</span>
+			<span>h</span>
+			<span>l</span>
+			<span>i</span>
+			<span>s</span>
+			<span>t</span>
+		</h1>
+
+		<div class="box-container">
+
+<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61i+FgDYD5L._SL1024_.jpg">
+			<div class="content">
+				<h3>WOW</h3>
+				<p>WOW Skin Science Ultimate Vitamin C Skin Care Kit - consists Vitamin C Face Wash brush, Mist Toner, Face Serum, Face Cream - 430mL</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹1,499.00 </div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/WOW-Skin-Science-Ultimate-Vitamin/dp/B08WX3Z9XH/ref=sr_1_5?crid=124RXI5RW4ZW9&dchild=1&keywords=skin+care&qid=1632341827&qsid=260-4949168-2507215&smid=A2WK4OB3ROODF0&sprefix=skin+ca%2Caps%2C307&sr=8-5&sres=B08WX3Z9XH%2CB00791CS2G%2CB08Q426CDD%2CB07P8F1RZ8%2CB00791CPWO%2CB06X8YS1NL%2CB0978L4K4Y%2CB099MV7CZ3%2CB0777K7BLR%2CB082L9BZ34%2CB086PGK5J9%2CB097R3912R%2CB091YVXVJ3%2CB082NWX7JC%2CB00TTM6TYG%2CB00RV73XDG%2CB09G2L8TRN%2CB084GQHCLB%2CB08FTQXWC7%2CB08TM8879Q" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/41FxpSX-qEL._SL1000_.jpg">
+			<div class="content">
+				<h3>Vaseline</h3>
+				<p>Vaseline Intensive Care Deep Moisture Body Lotion, Long Lasting Moisturisation For Healthy, Glowing Skin, 600 ml</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹323.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/Vaseline-Intensive-Care-Moisture-Lotion/dp/B08M4T5FJG/ref=sxin_14_trr_1374407031_0?crid=124RXI5RW4ZW9&cv_ct_cx=skin+care&dchild=1&keywords=skin+care&pd_rd_i=B08M4T5FJG&pd_rd_r=bc7a626a-5487-4ffa-b13b-3052285035ec&pd_rd_w=iVI2M&pd_rd_wg=mBTtH&pf_rd_p=e105d62b-652b-41b3-9b58-617e3a9c6f72&pf_rd_r=9PF20NDK0B5SGDMG2PHA&qid=1632341827&sprefix=skin+ca%2Caps%2C307&sr=1-1-439ac954-ad46-4ba0-bd86-480f8aab80ed" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/41tL2TexyQL._SL1200_.jpg">
+			<div class="content">
+				<h3>L'Oreal</h3>
+				<p>L'Oreal Paris Revitalift Crystal Micro-Essence, 22 g</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹239.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/LOreal-Paris-Revitalift-Crystal-Micro-Essence/dp/B082L9BZ34/ref=sr_1_14?crid=124RXI5RW4ZW9&dchild=1&keywords=skin+care&qid=1632341827&qsid=260-4949168-2507215&sprefix=skin+ca%2Caps%2C307&sr=8-14&sres=B08WX3Z9XH%2CB00791CS2G%2CB08Q426CDD%2CB07P8F1RZ8%2CB00791CPWO%2CB06X8YS1NL%2CB0978L4K4Y%2CB099MV7CZ3%2CB0777K7BLR%2CB082L9BZ34%2CB086PGK5J9%2CB097R3912R%2CB091YVXVJ3%2CB082NWX7JC%2CB00TTM6TYG%2CB00RV73XDG%2CB09G2L8TRN%2CB084GQHCLB%2CB08FTQXWC7%2CB08TM8879Q" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61Dy7xLqKKL._SL1200_.jpg">
+			<div class="content">
+				<h3>Mamaearth</h3>
+				<p>Mamaearth Skin Illuminate Vitamin C Face Serum For Glowing and Radiant Skin with High Potency Vitamin C & Turmeric; For Men and Women 30 g</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹538.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/Mamaearth-Illuminate-Vitamin-Radiant-Turmeric/dp/B082NWX7JC/ref=sr_1_18?crid=124RXI5RW4ZW9&dchild=1&keywords=skin+care&qid=1632341827&qsid=260-4949168-2507215&smid=A61C6NUFGVGS7&sprefix=skin+ca%2Caps%2C307&sr=8-18&sres=B08WX3Z9XH%2CB00791CS2G%2CB08Q426CDD%2CB07P8F1RZ8%2CB00791CPWO%2CB06X8YS1NL%2CB0978L4K4Y%2CB099MV7CZ3%2CB0777K7BLR%2CB082L9BZ34%2CB086PGK5J9%2CB097R3912R%2CB091YVXVJ3%2CB082NWX7JC%2CB00TTM6TYG%2CB00RV73XDG%2CB09G2L8TRN%2CB084GQHCLB%2CB08FTQXWC7%2CB08TM8879Q" class="btn">book now</a>
+			</div>
+		</div>
+		
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61O0CDVeM3S._SL1100_.jpg">
+			<div class="content">
+				<h3>mCaffeine</h3>
+				<p>mCaffeine Espresso Coffee Skin Care Routine for Deep Exfoliation & Oil Free Hydration | Face Wash, Face Scrub, Face Mask, Moisturizer | All Skin Types | Cruelty Free & Vegan</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹1,259.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/mCaffeine-Espresso-Exfoliation-Hydration-Moisturizer/dp/B0983QB3SW/ref=sr_1_1_sspa?dchild=1&keywords=skin+care&qid=1632344292&smid=A2A53F3N8CEFWW&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFQWkU5MlNQWkM1SVUmZW5jcnlwdGVkSWQ9QTA4NDE1MTA3MzRKQjlKNzBWUEQmZW5jcnlwdGVkQWRJZD1BMDc4MzQ0MDIxNEREVUMwWENXMlMmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl" class="btn">book now</a>
+			</div>
+		</div>
+		
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61HZwqwC5PL._SL1000_.jpg">
+			<div class="content">
+				<h3>Himalaya</h3>
+				<p>Himalaya Pure Skin Neem Facial Kit With Face Massager</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹454.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/Himalaya-Pure-Skin-Facial-Massager/dp/B06X8YS1NL/ref=sr_1_10?dchild=1&keywords=skin+care&qid=1632344292&qsid=260-4949168-2507215&sr=8-10&sres=B08WX3Z9XH%2CB00791CS2G%2CB08Q426CDD%2CB07P8F1RZ8%2CB00791CPWO%2CB06X8YS1NL%2CB0978L4K4Y%2CB099MV7CZ3%2CB0777K7BLR%2CB082L9BZ34%2CB086PGK5J9%2CB097R3912R%2CB091YVXVJ3%2CB082NWX7JC%2CB00TTM6TYG%2CB00RV73XDG%2CB09G2L8TRN%2CB084GQHCLB%2CB08FTQXWC7%2CB08TM8879Q" class="btn">book now</a>
+			</div>
+		</div>
+
+	</div>
+
+
+	</section>
+
+
+
+<!--------------------footer section-------------------------------------------------------------->
+
+	<section class="footer">
+
+		<div class="box-container">
+
+			<div class="box">
+				<h3>about us</h3>
+				<p>Searching for your favourite products at the best possible prices? At smart shopping we give you easy access to the best deals that can help you save more money while shopping.
+				Shortlisting, filtering, and researching takes away a lot of time, and when you have finally decided on what you want to buy, it can get cumbersome to find the best deals on that particular product. With Amazon, Flipkart, Myntra, Paytm and other similar platforms offering varied discounts, it can also get tough to fish out the best offers. That’s when you are going to need a platform like pricee.com – a one stop solution for online price comparisons across multiple product categories.</p>
+			</div>
+
+			<div class="box">
+				<h3>website</h3>
+				<a href="https://amazon.in">Amazon</a>
+				<a href="https://www.flipkart.com">Flipkart</a>
+				<a href="https://www.olx.in">olx</a>
+			</div>
+
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="#home">Home</a>
+				<a href="{{ url_for('.index',_anchor='popular') }}">Popular</a>
+				<a href="{{ url_for('.index',_anchor='categories') }}">Categories</a>
+				<a href="{{ url_for('wishlist') }}">Wishlist</a>
+				<a href="{{ url_for('.index',_anchor='services') }}">Services</a>
+				<a href="{{ url_for('.index',_anchor='contact') }}">Contact</a>
+			</div>
+
+			<div class="box">
+				<h3>follow us</h3>
+				<a href="#">facebook</a>
+				<a href="#">instagram</a>
+				<a href="#">twitter</a>
+				<a href="#">linkedin</a>
+				<a href="#">github</a>
+			</div>
+
+		</div>
+
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+ 	let menurr = document.querySelector('#menubarr');
+	let navbarr = document.querySelector('.navbarr');
+	let searchBtn = document.querySelector('#search-btn');
+	let searchBar = document.querySelector('.search-bar-container');
+	let usr = document.querySelector('#use');
+	let detail = document.querySelector('.userr');
+
+	window.onscroll = () =>{
+		searchBtn.classList.remove('fa-times');
+		searchBar.classList.remove('active');
+		menurr.classList.remove('fa-times');
+		navbarr.classList.remove('active');
+		detail.classList.remove('active');
+	}
+
+	menurr.addEventListener('click', () => {
+		menurr.classList.toggle('fa-times');
+		navbarr.classList.toggle('active');
+	})
+
+	searchBtn.addEventListener('click', () => {
+	searchBtn.classList.toggle('fa-times');
+	searchBar.classList.toggle('active');
+	})
+
+	usr.addEventListener('click', () => {
+		detail.classList.toggle('active');
+	})
+
+ </script>
+
+
+script src="{{ url_for('static',filename='script.js') }}">
+		
+</script>
+
+</body>
+</html>

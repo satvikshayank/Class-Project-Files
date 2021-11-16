@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>Smart Shopping</title>
+
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+<body>
+
+<!--------------------header section-------------------------------------------------------------->
+	<header>
+
+		<div id="menubarr" class="fas fa-bars"></div>
+
+
+
+		<nav class="navbarr">
+			<a href="{{ url_for('index') }}">Home</a>
+			<a href="{{ url_for('.index',_anchor='categories') }}">Categories</a>
+		</nav>
+
+
+
+		<a href="#" class="logo"><span>Smart</span> shopping</a>
+
+		
+
+		<div class="icons">
+			<i class="fas fa-search" id="search-btn"></i>
+			<i class="fas fa-user" id="use"></i>
+			<input type="submit" name="" value="logout" class="btn" id="logout">
+		</div>
+
+		<div class="userr">
+			<div class="ico">
+				<div class="icon">
+					<i class="fas fa-user" id="login-btn"></i>
+				</div>
+				<div class="info">
+					<p>Username</p>
+					<p>abc@gmai.com</p>
+				</div>
+			</div>
+			<div class="cont">
+				<a href="index.html #contact">Contact</a> 				
+			</div>
+			<div class="exit">
+				<input type="submit" name="" value="logout" class="butt" >
+			</div>
+		</div>
+
+		<form action="/results" class="search-bar-container" method="get">
+			<input type="search" id="search-bar" placeholder="search here......" name="product_name">
+			<a href="search.html"><i for="search-bar" class="fas fa-search"></i></a>
+		</form>
+
+	</header>
+
+
+
+
+	<section class="mobile" id="mobile">
+		
+
+		<h1 class="cate">
+			<span>s</span>
+			<span>e</span>
+			<span>c</span>
+			<span>u</span>
+			<span>r</span>
+			<span>i</span>
+			<span>t</span>
+			<span>y</span>
+			<span class="space"></span>
+			<span>p</span>
+			<span>r</span>
+			<span>o</span>
+			<span>d</span>
+			<span>u</span>
+			<span>c</span>
+			<span>t</span>
+			<span>s</span>
+		
+		</h1>
+
+		<div class="box-container">
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/71Xt+nPZhzL._SL1500_.jpg">
+			<div class="content">
+				<h3>realme</h3>
+				<p>realme 360 Deg 1080p Full HD WiFi Smart Security Camera (White) | Alexa Enabled | 2-Way Audio | Night Vision | Motion Tracking & Intruder Alert, 7.1cm x 6.58cm x 11.43cm (RMH2001)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹2,899.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/realme-Security-Enabled-Tracking-Intruder/dp/B08LZH4FYQ/ref=sr_1_6?crid=168O4ZDSJ8P6W&dchild=1&keywords=security+camera&qid=1632344729&qsid=260-4949168-2507215&sprefix=sec%2Caps%2C315&sr=8-6&sres=B07HJD1KH4%2CB07XLML2YS%2CB083V41T6M%2CB08LZH4FYQ%2CB07ZMKFXVL%2CB0867X1QGP%2CB08Z3B3YXM%2CB09CYTJV3N%2CB07YFWVRCM%2CB08DRR9YJ3%2CB08446T2PR%2CB08H58G91N%2CB0756TVGMQ%2CB07ZML3JK5%2CB07CQ62Z4L%2CB08NWXZ4N7&srpt=SECURITY_CAMERA" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/71RTXp3I6qL._SL1500_.jpg">
+			<div class="content">
+				<h3>LAVNA</h3>
+				<p>LAVNA Lock with RFID Card/Key Residential Unlock for Wooden & Metal Door (Right Side Indoor)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹3,899.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/LAVNA-Residential-Unlock-Wooden-Indoor/dp/B08YDN5WJ9/ref=sr_1_2_sspa?crid=34JT2MKDKNBU9&dchild=1&keywords=security+products+for+home&qid=1632342132&sprefix=security+products%2Caps%2C279&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExU0pJMERFNlYwOVhLJmVuY3J5cHRlZElkPUEwMzI2MjM5M0kxTFRXMkI5MFNTQiZlbmNyeXB0ZWRBZElkPUEwNTg5ODU4MVNKS0VUNzAyRkw1SyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/7145QJ-mLbL._SL1500_.jpg">
+			<div class="content">
+				<h3>Godrej</h3>
+				<p>Godrej Security Solutions Forte Pro 30 litres Digital Electronic Safe Locker for Home & Office with Locking Mechanism (Light Grey)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹14,899.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/Godrej-Security-Solutions-Forte-Digital/dp/B07TD8CNNQ/ref=sr_1_9?crid=34JT2MKDKNBU9&dchild=1&keywords=security+products+for+home&qid=1632342132&qsid=260-4949168-2507215&sprefix=security+products%2Caps%2C279&sr=8-9&sres=B08446T2PR%2CB07KZQ94QL%2CB099ZZTF94%2CB07FSHG5SM%2CB08WHTD7G5%2CB07TD87TPL%2CB07TD8CNNQ%2CB08Q3YGZCS%2CB08RDWKXGH%2CB08H58G91N%2CB0748JY53F%2CB098MDNJ4W%2CB09CYTJV3N%2CB07TGH6LQC%2CB07NDY8T1Q%2CB08PDBP6TX%2CB07HJD1KH4%2CB07XZHMG3D%2CB01MSAFLIR%2CB07CZ1NRXH" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/71SbKbzh+QL._SL1500_.jpg">
+			<div class="content">
+				<h3>Zebronics</h3>
+				<p>Zebronics Zeb Smart Cam 100 Smart Home Automation WiFi Camera with Remote Monitoring, Advanced Motion Detection, Day/Night Mode, Live Streaming, Micro SD Card Slot, 2 Way Audio, works with Android and iOS Smartphones</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹1,422.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/Zeb-Smart-Cam-100-Smartphones/dp/B08H58G91N/ref=sr_1_11?dchild=1&keywords=security+products+for+home&qid=1632343778&qsid=260-4949168-2507215&sr=8-11&sres=B08446T2PR%2CB07KZQ94QL%2CB07FSHG5SM%2CB08WHTD7G5%2CB07TD87TPL%2CB07TD8CNNQ%2CB08Q3YGZCS%2CB08RDWKXGH%2CB08H58G91N%2CB099ZZTF94%2CB0748JY53F%2CB098MDNJ4W%2CB09CYTJV3N%2CB07TGH6LQC%2CB07NDY8T1Q%2CB08PDBP6TX%2CB07HJD1KH4%2CB07XZHMG3D%2CB01MSAFLIR%2CB07CZ1NRXH" class="btn">book now</a>
+			</div>
+		</div>
+		
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/51aHlnjVH-L._SL1500_.jpg">
+			<div class="content">
+				<h3>Mi</h3>
+				<p>Mi 360° Home Security Camera 2K Pro l 2K Super Clear Image Quality l Dual Band Wi-fi Connection l 3 Million Pixels | 360° Panorama | Full Color in Low-Light | AI Human Detection</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹4,890.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/Security-Connection-Panorama-Low-Light-Detection/dp/B09CYTJV3N/ref=sr_1_15?crid=34JT2MKDKNBU9&dchild=1&keywords=security+products+for+home&qid=1632342132&qsid=260-4949168-2507215&sprefix=security+products%2Caps%2C279&sr=8-15&sres=B08446T2PR%2CB07KZQ94QL%2CB099ZZTF94%2CB07FSHG5SM%2CB08WHTD7G5%2CB07TD87TPL%2CB07TD8CNNQ%2CB08Q3YGZCS%2CB08RDWKXGH%2CB08H58G91N%2CB0748JY53F%2CB098MDNJ4W%2CB09CYTJV3N%2CB07TGH6LQC%2CB07NDY8T1Q%2CB08PDBP6TX%2CB07HJD1KH4%2CB07XZHMG3D%2CB01MSAFLIR%2CB07CZ1NRXH" class="btn">book now</a>
+			</div>
+		</div>
+		
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/41inVRIHQBL._SL1000_.jpg">
+			<div class="content">
+				<h3>TP-Link</h3>
+				<p>TP-Link Tapo C100 1080p Full HD Indoor WiFi Spy Security Camera| Night Vision | Two Way Audio| Intruder Alert | Works with Alexa and Google, White</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹1,999.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/TP-Link-Indoor-Security-Camera-Intruder/dp/B083V41T6M/ref=sr_1_21_sspa?dchild=1&keywords=security+products+for+home&qid=1632343778&sr=8-21-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExRjRVWUM0WjRTMlA1JmVuY3J5cHRlZElkPUEwODExNDA0MUM4Qkk3TUtZQ1FOMCZlbmNyeXB0ZWRBZElkPUEwMzU1OTg4M1Q5SlFYSE41UDVLVCZ3aWRnZXROYW1lPXNwX210ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" class="btn">book now</a>
+			</div>
+		</div>
+
+	</div>
+
+
+	</section>
+
+
+
+<!--------------------footer section-------------------------------------------------------------->
+
+	<section class="footer">
+
+		<div class="box-container">
+
+
+		<div class="box">
+				<h3>about us</h3>
+				<p>Searching for your favourite products at the best possible prices? At smart shopping we give you easy access to the best deals that can help you save more money while shopping.
+				Shortlisting, filtering, and researching takes away a lot of time, and when you have finally decided on what you want to buy, it can get cumbersome to find the best deals on that particular product. With Amazon, Flipkart, Myntra, Paytm and other similar platforms offering varied discounts, it can also get tough to fish out the best offers. That’s when you are going to need a platform like pricee.com – a one stop solution for online price comparisons across multiple product categories.</p>
+			</div>
+
+			<div class="box">
+				<h3>website</h3>
+				<a href="https://amazon.in">Amazon</a>
+				<a href="https://www.flipkart.com">Flipkart</a>
+				<a href="https://www.olx.in">olx</a>
+				<a href="https://www.shopping.google.com">Google</a>
+			</div>
+
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="#home">Home</a>
+				<a href="{{ url_for('.index',_anchor='popular') }}">Popular</a>
+				<a href="{{ url_for('.index',_anchor='categories') }}">Categories</a>
+				<a href="{{ url_for('.index',_anchor='services') }}">Services</a>
+				<a href="{{ url_for('.index',_anchor='contact') }}">Contact</a>
+			</div>
+
+			<div class="box">
+				<h3>follow us</h3>
+				<a href="#">facebook</a>
+				<a href="#">instagram</a>
+				<a href="#">twitter</a>
+				<a href="#">linkedin</a>
+				<a href="#">github</a>
+			</div>
+
+		</div>
+
+
+		
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ 	let menurr = document.querySelector('#menubarr');
+	let navbarr = document.querySelector('.navbarr');
+	let searchBtn = document.querySelector('#search-btn');
+	let searchBar = document.querySelector('.search-bar-container');
+	let usr = document.querySelector('#use');
+	let detail = document.querySelector('.userr');
+
+	window.onscroll = () =>{
+		searchBtn.classList.remove('fa-times');
+		searchBar.classList.remove('active');
+		menurr.classList.remove('fa-times');
+		navbarr.classList.remove('active');
+		detail.classList.remove('active');
+	}
+
+	menurr.addEventListener('click', () => {
+		menurr.classList.toggle('fa-times');
+		navbarr.classList.toggle('active');
+	})
+
+	searchBtn.addEventListener('click', () => {
+	searchBtn.classList.toggle('fa-times');
+	searchBar.classList.toggle('active');
+	})
+
+	usr.addEventListener('click', () => {
+		detail.classList.toggle('active');
+	})
+
+ </script>
+
+
+<script src="{{ url_for('static',filename='script.js') }}">
+		
+</script>
+
+</body>
+</html>

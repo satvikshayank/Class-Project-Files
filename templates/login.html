@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>Smart Shopping</title>
+
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+
+
+<!--------------------header section-------------------------------------------------------------->
+	<header>
+
+
+		<a href="#" class="logo"><span>Smart</span> shopping</a>
+
+
+	</header>
+
+
+
+	<!-------------------------login form --------------------------------------------------------------->
+
+	<div class="login-form-container">
+
+		
+		<form action="login" method="post">
+			<h3>login</h3>
+			<input type="email" name="logemail" class="box" placeholder="Enter your email">
+			<input type="password" name="logpass" class="box" placeholder="Enter your password">
+			<input type="submit" value="login now" class="btn" id="clos">
+			<input type="checkbox" id="remember">
+			<label for="remember">Remember me</label>
+			<a href="{{url_for('register')}}"><p>Don't have and Account?<span> Register now</span></p></a>
+		</form>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="{{url_for('static',filename='script.js')}}">
+
+</body>
+</html>

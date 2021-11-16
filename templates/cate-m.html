@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>Smart Shopping</title>
+
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+<body>
+
+<!--------------------header section-------------------------------------------------------------->
+	<header>
+
+		<div id="menubarr" class="fas fa-bars"></div>
+
+
+
+		<nav class="navbarr">
+			<a href="{{ url_for('index') }}">Home</a>
+			<a href="{{ url_for('.index',_anchor='categories') }}">Categories</a>
+		</nav>
+
+
+
+		<a href="#" class="logo"><span>Smart</span> shopping</a>
+
+		
+
+		<div class="icons">
+			<i class="fas fa-search" id="search-btn"></i>
+			<i class="fas fa-user" id="use"></i>
+			<input type="submit" name="" value="logout" class="btn" id="logout">
+		</div>
+
+		<div class="userr">
+			<div class="ico">
+				<div class="icon">
+					<i class="fas fa-user" id="login-btn"></i>
+				</div>
+				<div class="info">
+					<p>Username</p>
+					<p>abc@gmai.com</p>
+				</div>
+			</div>
+			<div class="cont">
+				<a href="index.html #contact">Contact</a> 				
+			</div>
+			<div class="exit">
+				<input type="submit" name="" value="logout" class="butt" >
+			</div>
+		</div>
+
+		<form action="/results" class="search-bar-container" method="get">
+			<input type="search" id="search-bar" placeholder="search here......" name="product_name">
+			<a href="search.html"><i for="search-bar" class="fas fa-search"></i></a>
+		</form>
+
+	</header>
+
+
+	<section class="mobile" id="mobile">
+		
+
+		<h1 class="cate">
+			<span>c</span>
+			<span>o</span>
+			<span>m</span>
+			<span>m</span>
+			<span>u</span>
+			<span>n</span>
+			<span>i</span>
+			<span>c</span>
+			<span>a</span>
+			<span>t</span>
+			<span>i</span>
+			<span>o</span>
+			<span>n</span>
+			<span class="space"></span>
+			<span>d</span>
+			<span>e</span>
+			<span>v</span>
+			<span>i</span>
+			<span>c</span>
+			<span>e</span>
+		</h1>
+
+		<div class="box-container">
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/8186D4Mph7L._SL1500_.jpg">
+			<div class="content">
+				<h3>MI</h3>
+				<p>Redmi Note 10 Pro Max (Vintage Bronze, 6GB RAM, 128GB Storage) -108MP Quad Camera | 120Hz Super Amoled Display</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹19,999.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/gp/product/B089MVC43X/ref=s9_acss_bw_cg_Budget_1a1_w?pf_rd_m=A1K21FY43GMZF8&pf_rd_s=merchandised-search-9&pf_rd_r=4AHXDQSZGCPJJM7DY9YE&pf_rd_t=101&pf_rd_p=49292940-0d7d-48a3-9fdd-e37a16e894f8&pf_rd_i=1389401031" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61TnX0PmqES._SL1500_.jpg">
+			<div class="content">
+				<h3>OnePlus</h3>
+				<p>OnePlus Nord 2 5G (Blue Haze, 8GB RAM, 128GB Storage)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹29,999.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/OnePlus-Nord-Blue-128GB-Storage/dp/B097RD2JX8/ref=sr_1_1?dchild=1&pf_rd_i=1389401031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=0e78651a-fe74-4a23-a8dc-1f39d1d8fa00&pf_rd_r=4AHXDQSZGCPJJM7DY9YE&pf_rd_s=merchandised-search-3&qid=1632339758&qsid=260-4949168-2507215&refinements=p_89%3AOnePlus&rnid=3837712031&s=electronics&sr=1-1&sres=B097RD2JX8%2CB097RDVDL2%2CB09576CYNP%2CB095PYTSV8%2CB097RF4WCM%2CB089MT34QL%2CB097RDPT8F%2CB097RDF6NW%2CB089MTJVLD%2CB089MSK447%2CB089MS8WHL%2CB089MS8SKL%2CB089MV1ZSM%2CB089MV3MVY%2CB089MVKH71%2CB089MSGHJQ%2CB089MT34QG%2CB0992FC4KY%2CB089MTW733%2CB089MV3MW8" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/719uP6EXsdL._SL1500_.jpg">
+			<div class="content">
+				<h3>Samsung</h3>
+				<p>Samsung Galaxy M32 5G (Sky Blue, 6GB RAM, 128GB Storage)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹20,999.00</div>
+				<p>Flipkart</p>
+				<a href="https://www.amazon.in/dp/B09CGJK2HG/ref=s9_acsd_al_bw_c2_x_0_t?pf_rd_m=A1K21FY43GMZF8&pf_rd_s=merchandised-search-4&pf_rd_r=VESDRMSJJ2J9C4Z2DSSK&pf_rd_t=101&pf_rd_p=4bcce4b1-37c9-428a-b68f-b00f7cd38cee&pf_rd_i=21505777031" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61uIgwiP90S._SL1200_.jpg">
+			<div class="content">
+				<h3>IQOO</h3>
+				<p>iQOO Z3 5G (Ace Black, 6GB RAM, 128GB Storage) | India's First SD 768G 5G Processor | 55W FlashCharge | Upto 9 Months No Cost EMI | 6 Months Free Screen Replacement</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹19,990.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/dp/B07WHR5RKH/ref=s9_acsd_al_bw_c2_x_0_t?pf_rd_m=A1K21FY43GMZF8&pf_rd_s=merchandised-search-2&pf_rd_r=S8RMPWVWZ0CGD1YCZJJA&pf_rd_t=101&pf_rd_p=23fe5425-e472-426f-a69c-4fce939578ec&pf_rd_i=26389332031" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61mMrj5F+HL._SL1500_.jpg">
+			<div class="content">
+				<h3>Realme</h3>
+				<p>realme C11 (2021) (Cool Grey, 4GB RAM+64GB Storage) with No Cost EMI/Additional Exchange Offers</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹8,799.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/realme-Storage-Additional-Exchange-Offers/dp/B09BBJL3XC/ref=sr_1_1?dchild=1&pf_rd_i=1389401031&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_p=0e78651a-fe74-4a23-a8dc-1f39d1d8fa00&pf_rd_r=84HN9G7P3P06EXXWRYVX&pf_rd_s=merchandised-search-3&qid=1632339905&qsid=260-4949168-2507215&refinements=p_89%3Arealme&rnid=3837712031&s=electronics&sr=1-1&sres=B09BBJL3XC%2CB096RT57F9%2CB099SJ233B%2CB096RWS54N%2CB099W89328%2CB09BBH1BDT%2CB099T7XNGW%2CB099SJHHQL%2CB099SF5X1W%2CB0993YD3KJ%2CB093P9HMZJ%2CB096FS4N23%2CB09DY6NWPK%2CB096FS571G%2CB08JCRWW1Q%2CB09DY5QRVR%2CB094ZJ3R89%2CB093PKCZ37%2CB096FQMQFC%2CB096FWBSL5" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61F7Xcyux0L._SL1500_.jpg">
+			<div class="content">
+				<h3>Apple</h3>
+				<p>Apple iPhone 13 Mini (256GB) - (Product) RED</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹79,900.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/Apple-iPhone-13-Mini-128GB/dp/B09G99NBNQ?ref_=ast_sto_dp&th=1&psc=1" class="btn">book now</a>
+			</div>
+		</div>
+
+			<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61F7Xcyux0L._SL1500_.jpg">
+			<div class="content">
+				<h3>Apple</h3>
+				<p>Apple iPhone 13 (256GB) - (Product) RED</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹89,900.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/dp/B09G9FPGTN" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/71gm8v4uPBL._SL1500_.jpg">
+			<div class="content">
+				<h3>Apple</h3>
+				<p>Apple iPhone 13 Pro (128GB) - Graphite</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹1,19,900.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/dp/B09G99YPQM" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61eDXs9QFNL._SL1500_.jpg">
+			<div class="content">
+				<h3>Apple</h3>
+				<p>Apple iPhone 13 Pro Max (128GB) - Sierra Blue</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹1,29,900.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/dp/B09G9H3RZH" class="btn">book now</a>
+			</div>
+		</div>
+
+	</div>
+
+
+	</section>
+
+
+
+<!--------------------footer section-------------------------------------------------------------->
+
+	<section class="footer">
+
+		<div class="box-container">
+
+			<div class="box">
+				<h3>about us</h3>
+				<p>Searching for your favourite products at the best possible prices? At smart shopping we give you easy access to the best deals that can help you save more money while shopping.
+				Shortlisting, filtering, and researching takes away a lot of time, and when you have finally decided on what you want to buy, it can get cumbersome to find the best deals on that particular product. With Amazon, Flipkart, Myntra, Paytm and other similar platforms offering varied discounts, it can also get tough to fish out the best offers. That’s when you are going to need a platform like pricee.com – a one stop solution for online price comparisons across multiple product categories.</p>
+			</div>
+
+			<div class="box">
+				<h3>website</h3>
+				<a href="https://amazon.in">Amazon</a>
+				<a href="https://www.flipkart.com">Flipkart</a>
+				<a href="https://www.olx.in">olx</a>
+				<a href="https://www.shopping.google.com">Google</a>
+			</div>
+
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="#home">Home</a>
+				<a href="{{ url_for('.index',_anchor='popular') }}">Popular</a>
+				<a href="{{ url_for('.index',_anchor='categories') }}">Categories</a>
+				<a href="{{ url_for('.index',_anchor='services') }}">Services</a>
+				<a href="{{ url_for('.index',_anchor='contact') }}">Contact</a>
+			</div>
+
+			<div class="box">
+				<h3>follow us</h3>
+				<a href="#">facebook</a>
+				<a href="#">instagram</a>
+				<a href="#">twitter</a>
+				<a href="#">linkedin</a>
+				<a href="#">github</a>
+			</div>
+
+		</div>
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+ 	let menurr = document.querySelector('#menubarr');
+	let navbarr = document.querySelector('.navbarr');
+	let searchBtn = document.querySelector('#search-btn');
+	let searchBar = document.querySelector('.search-bar-container');
+	let usr = document.querySelector('#use');
+	let detail = document.querySelector('.userr');
+
+	window.onscroll = () =>{
+		searchBtn.classList.remove('fa-times');
+		searchBar.classList.remove('active');
+		menurr.classList.remove('fa-times');
+		navbarr.classList.remove('active');
+		detail.classList.remove('active');
+	}
+
+	menurr.addEventListener('click', () => {
+		menurr.classList.toggle('fa-times');
+		navbarr.classList.toggle('active');
+	})
+
+	searchBtn.addEventListener('click', () => {
+	searchBtn.classList.toggle('fa-times');
+	searchBar.classList.toggle('active');
+	})
+
+	usr.addEventListener('click', () => {
+		detail.classList.toggle('active');
+	})
+
+ </script>
+
+
+<script src="{{ url_for('static',filename='script.js') }}">
+		
+</script>
+
+</body>
+</html>

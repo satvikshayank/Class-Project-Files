@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>Smart Shopping</title>
+
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+	<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+
+</head>
+<body>
+
+<!--------------------header section-------------------------------------------------------------->
+	<header>
+
+		<div id="menubarr" class="fas fa-bars"></div>
+
+		<div id="menu-bar" class="fas fa-bars"></div>
+
+		<nav class="navbarr">
+			<a href="{{ url_for('index') }}">Home</a>
+			<a href="{{ url_for('.index',_anchor='categories') }}">Categories</a>
+		</nav>
+
+
+
+		<a href="#" class="logo"><span>Smart</span> shopping</a>
+
+		
+
+		<div class="icons">
+			<i class="fas fa-search" id="search-btn"></i>
+			<i class="fas fa-user" id="use"></i>
+			<input type="submit" name="" value="logout" class="btn" id="logout">
+		</div>
+
+		<div class="userr">
+			<div class="ico">
+				<div class="icon">
+					<i class="fas fa-user" id="login-btn"></i>
+				</div>
+				<div class="info">
+					<p>Username</p>
+					<p>abc@gmai.com</p>
+				</div>
+			</div>
+			<div class="cont">
+				<a href="index.html #contact">Contact</a> 				
+			</div>
+			<div class="exit">
+				<input type="submit" name="" value="logout" class="butt" >
+			</div>
+		</div>
+
+		<form action="/results" class="search-bar-container" method="get">
+			<input type="search" id="search-bar" placeholder="search here......" name="product_name">
+			<a href="search.html"><i for="search-bar" class="fas fa-search"></i></a>
+		</form>
+
+	</header>
+
+
+	<section class="mobile" id="mobile">
+		
+
+		<h1 class="cate">
+			<span>h</span>
+			<span>o</span>
+			<span>m</span>
+			<span>e</span>
+			<span class="space"></span>
+			<span>a</span>
+			<span>p</span>
+			<span>p</span>
+			<span>l</span>
+			<span>i</span>
+			<span>a</span>
+			<span>n</span>
+			<span>c</span>
+
+			
+		</h1>
+
+		<div class="box-container">
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/71m0Nn4vqOL._SL1254_.jpg">
+			<div class="content">
+				<h3>AmazonBasics</h3>
+				<p>AmazonBasics 80cm (32 inch) HD Ready Smart LED Fire TV AB32E10SS (Black) (2020 Model)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹16,999.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/dp/B087JX4TT4/ref=s9_acsd_al_bw_c2_x_0_t?pf_rd_m=A1K21FY43GMZF8&pf_rd_s=merchandised-search-5&pf_rd_r=EN5QTKPK1QGEY13FTBMQ&pf_rd_t=101&pf_rd_p=49b89a4e-8539-4c21-97bc-17c100e07998&pf_rd_i=26190167031" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61qAOpxo8wL._SL1500_.jpg">
+			<div class="content">
+				<h3>Carrier</h3>
+				<p>Carrier 1.5 Ton 5 Star Inverter Split AC (Copper, PM 2.5 Filter, CAI18ES5R30F0, 2021 Model, White)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹41,990.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/dp/B08T8HSCH7/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=687b0c1b445e7ea5528b9b87f89fbd4f&hsa_cr_id=6161807260202&pd_rd_plhdr=t&pd_rd_r=a1c11873-49fd-4bef-9e5d-8fa92b7b350f&pd_rd_w=GPiEi&pd_rd_wg=7qdx6&ref_=sbx_be_s_sparkle_mcd_asin_0_title" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61RZcuVxPFL._SL1500_.jpg">
+			<div class="content">
+				<h3>Samsung</h3>
+				<p>Samsung 23 L Solo Microwave Oven (MS23F301TAK/TL, Black)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹5,750.00 </div>
+				<p>Flipkart</p>
+				<a href="https://www.amazon.in/Samsung-Microwave-MS23F301TAK-TL-Black/dp/B0138EWYTO/ref=lp_1380072031_1_1?dchild=1" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/71+drtp5RSL._SL1500_.jpg">
+			<div class="content">
+				<h3>Usha</h3>
+				<p>Usha Cook Joy (3616) 1600-Watt Induction Cooktop (Black)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹2,099.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/dp/B072PXYG1R/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=e04d0a4cd93c903ab0604f74f855d611&hsa_cr_id=9186762320902&pd_rd_plhdr=t&pd_rd_r=f2406d73-77b2-4a57-9b5a-46da38c9a147&pd_rd_w=mojGc&pd_rd_wg=zHD7Q&ref_=sbx_be_s_sparkle_mcd_asin_0_img" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61yy90wpYLS._SL1500_.jpg">
+			<div class="content">
+				<h3>Mi</h3>
+				<p>Mi Robot Vacuum-Mop P, 2100 Pa Strong Suction Robotic Floor Cleaner with 2 in 1 Mopping and Vacuum, Intelligent floor mapping (LDS Navigation), App Control (WiFi Connectivity, Google Assistant)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹24,999.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/gp/product/B092R48XXB/ref=s9_acss_bw_cg_breakhtw_1a1_w?pf_rd_m=A1K21FY43GMZF8&pf_rd_s=merchandised-search-5&pf_rd_r=9JJ2X008PEG9GCM98VWA&pf_rd_t=101&pf_rd_p=4ac1ba71-f711-40a6-9bff-571e8be07f0e&pf_rd_i=4951860031" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61qHhhWiG-L._SL1500_.jpg">
+			<div class="content">
+				<h3>KENT</h3>
+				<p>KENT Gold Optima 10 Litres- 4.5 L(Raw Water)+5.5 L(Purified Water) Gravity Based Non-electric Water Purifier (Aqua Blue/White)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹1,599.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/Gold-Optima-10-Litres-Non-electric-Purifier/dp/B009DA69W6/ref=lp_15132558031_1_1?dchild=1&smid=A18F28GKTXT7LZ" class="btn">book now</a>
+			</div>
+		</div>
+
+			<div class="box">
+			<img src="https://m.media-amazon.com/images/I/71BYRkQ2H8L._SL1500_.jpg">
+			<div class="content">
+				<h3>Usha</h3>
+				<p>Usha Thunderbolt Mixer Grinder 800-Watt 3 Jars with Copper Motor(Red)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹3,549.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/dp/B0835JGDBB/ref=redir_mobile_desktop?_encoding=UTF8&aaxitk=e04d0a4cd93c903ab0604f74f855d611&hsa_cr_id=9186762320902&pd_rd_plhdr=t&pd_rd_r=f2406d73-77b2-4a57-9b5a-46da38c9a147&pd_rd_w=mojGc&pd_rd_wg=zHD7Q&ref_=sbx_be_s_sparkle_mcd_asin_1_title" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/61N44JgNZjL._SL1500_.jpg">
+			<div class="content">
+				<h3>Samsung</h3>
+				<p>Samsung 1.5 Ton 3 Star Inverter Split AC (Copper, Convertible 5 in 1, HD Filter, 2021 Model, Floral pattern, AR18AYLYATBNNA)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹32,990.00 </div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/dp/B08VWZY6R4/ref=s9_acsd_al_bw_c2_x_0_i?pf_rd_m=A1K21FY43GMZF8&pf_rd_s=merchandised-search-9&pf_rd_r=5ZGS3JY0P7CBEBCTWPE1&pf_rd_t=101&pf_rd_p=c38d7ae5-c848-4c9f-9b2f-18cf4d749b5a&pf_rd_i=3474656031" class="btn">book now</a>
+			</div>
+		</div>
+
+		<div class="box">
+			<img src="https://m.media-amazon.com/images/I/71s-O6P7H2L._SL1500_.jpg">
+			<div class="content">
+				<h3>Voltas</h3>
+				<p>Voltas Beko 8 Place Table Top Dishwasher (DT8S, Silver, Inbuilt Heater, Adjustable Upper Shelf)</p>
+				<div class="stars">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</div>
+				<div class="price">₹20,690.00</div>
+				<p>Amazon</p>
+				<a href="https://www.amazon.in/Voltas-Beko-Settings-Dishwasher-DT8S/dp/B07NF7NHSN/ref=lp_21074454031_1_1?dchild=1" class="btn">book now</a>
+			</div>
+		</div>
+
+	</div>
+
+
+	</section>
+
+
+
+<!--------------------footer section-------------------------------------------------------------->
+
+	<section class="footer">
+
+		<div class="box-container">
+
+			<div class="box">
+				<h3>about us</h3>
+				<p>Searching for your favourite products at the best possible prices? At smart shopping we give you easy access to the best deals that can help you save more money while shopping.
+				Shortlisting, filtering, and researching takes away a lot of time, and when you have finally decided on what you want to buy, it can get cumbersome to find the best deals on that particular product. With Amazon, Flipkart, Myntra, Paytm and other similar platforms offering varied discounts, it can also get tough to fish out the best offers. That’s when you are going to need a platform like pricee.com – a one stop solution for online price comparisons across multiple product categories.</p>
+			</div>
+
+			<div class="box">
+				<h3>website</h3>
+				<a href="https://amazon.in">Amazon</a>
+				<a href="https://www.flipkart.com">Flipkart</a>
+				<a href="https://www.olx.in">olx</a>
+				<a href="https://www.shopping.google.com">Google</a>
+			</div>
+
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="#home">Home</a>
+				<a href="{{ url_for('.index',_anchor='popular') }}">Popular</a>
+				<a href="{{ url_for('.index',_anchor='categories') }}">Categories</a>
+				<a href="{{ url_for('.index',_anchor='services') }}">Services</a>
+				<a href="{{ url_for('.index',_anchor='contact') }}">Contact</a>
+			</div>
+
+			<div class="box">
+				<h3>follow us</h3>
+				<a href="#">facebook</a>
+				<a href="#">instagram</a>
+				<a href="#">twitter</a>
+				<a href="#">linkedin</a>
+				<a href="#">github</a>
+			</div>
+
+		</div>
+
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ 	let menurr = document.querySelector('#menubarr');
+	let navbarr = document.querySelector('.navbarr');
+	let searchBtn = document.querySelector('#search-btn');
+	let searchBar = document.querySelector('.search-bar-container');
+	let usr = document.querySelector('#use');
+	let detail = document.querySelector('.userr');
+
+	window.onscroll = () =>{
+		searchBtn.classList.remove('fa-times');
+		searchBar.classList.remove('active');
+		menurr.classList.remove('fa-times');
+		navbarr.classList.remove('active');
+		detail.classList.remove('active');
+	}
+
+	menurr.addEventListener('click', () => {
+		menurr.classList.toggle('fa-times');
+		navbarr.classList.toggle('active');
+	})
+
+	searchBtn.addEventListener('click', () => {
+	searchBtn.classList.toggle('fa-times');
+	searchBar.classList.toggle('active');
+	})
+
+	usr.addEventListener('click', () => {
+		detail.classList.toggle('active');
+	})
+
+ </script>
+
+<script src="{{ url_for('static',filename='script.js') }}">
+		
+</script>
+
+</body>
+</html>
